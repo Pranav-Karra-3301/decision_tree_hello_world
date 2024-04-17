@@ -17,7 +17,7 @@ A decision Tree is a supervised learning method used to predict the output of a 
     2. It is calculated using the following formula:
     
     $$
-    \mathcal\sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))
+    \mathcal{\sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))}
     $$
     
 2. **Information Gain**: Measures the decrease in entropy after the data set is split. 
