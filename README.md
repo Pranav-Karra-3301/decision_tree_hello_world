@@ -33,7 +33,6 @@ A decision Tree is a supervised learning method used to predict the output of a 
     {IG}({D_p},f) = E({D_p})-\frac{N_{left}}{N}E({D_{left}})-\frac{N_{right}}{N}E({D_{right}})
     $$
     
-    <aside>
     💡 where:
     
     $f$         is Feature Split on
@@ -52,7 +51,6 @@ A decision Tree is a supervised learning method used to predict the output of a 
     
     $N_{right}$  is the Total Number of Samples at Right Child Node
     
-    </aside>
     
 3. **Gain Ratio**: Gain ratio handles the issue of bias by normalizing the information gain using Split Info
     
@@ -85,14 +83,13 @@ A decision Tree is a supervised learning method used to predict the output of a 
     1. It measures how often a randomly chosen variable would be incorrectly identified. 
     
     $$
-    {Gini}(D) = 1 - \sum_{i=1}^m {Pi}^2
+    \text{Gini}(D) = 1 - \sum_{i=1}^m {Pi}^2
     $$
     
-    <aside>
+
     💡 Where
     ${Pi}$ is the probability that a tuple in $D$ belongs to class ${Ci}$
-    
-    </aside>
+
     
 5. **Root Node**: The top node of a decision tree. Represents the entire data sample
 6. **Decision Node**: Subnodes that can be split into different Subnodes
