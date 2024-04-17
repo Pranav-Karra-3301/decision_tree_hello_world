@@ -24,7 +24,7 @@ A decision Tree is a supervised learning method used to predict the output of a 
     1. It is calculated as follows:
     
     $$
-    \text{IG}(Y,X)=\text{Entropy}(Y)=\text{Entropy}(Y|X)
+    {IG}(Y,X)=\text{Entropy}(Y)=\text{Entropy}(Y|X)
     $$
     
     or in more detail its given as:
