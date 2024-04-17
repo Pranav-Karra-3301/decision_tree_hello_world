@@ -20,10 +20,7 @@ $$\sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))$$
     
 2. **Information Gain**: Measures the decrease in entropy after the data set is split. 
     1. It is calculated as follows:
-    
-    $$
-    IG(Y,X) = \text{Entropy}(Y) - \text{Entropy}(Y|X)
-    $$
+$$IG(Y,X) = \text{Entropy}(Y) - \text{Entropy}(Y|X)$$
     
     or in more detail its given as:
     
