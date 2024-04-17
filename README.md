@@ -5,9 +5,9 @@
 ### What is it?
 
 A decision Tree is a supervised learning method used to predict the output of a target variable
-<a align="center">
-    ![decision-tree.jpg](decision-tree.jpg)
-</a>
+<p align="center">
+    <img src = "decision-tree.jpg">
+</p>
 
 ---
 
