@@ -23,10 +23,7 @@ $$\sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))$$
 $$IG(Y,X) = \text{Entropy}(Y) - \text{Entropy}(Y|X)$$
     
     or in more detail its given as:
-    
-    $$
-    IG(D_p, f) = E(D_p) - \frac{N_{left}}{N} E(D_{left}) - \frac{N_{right}}{N} E(D_{right})
-    $$
+$$IG(D_p, f) = E(D_p) - \frac{N_{left}}{N} E(D_{left}) - \frac{N_{right}}{N} E(D_{right})$$
     
     💡 where:
     
