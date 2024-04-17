@@ -37,7 +37,7 @@ $$IG(D_p, f) = E(D_p) - \frac{N_{left}}{N} E(D_{left}) - \frac{N_{right}}{N} E(D
     - $N_{left}$  is the Total Number of Samples at Left Child Node
     - $N_{right}$ is the Total Number of Samples at Right Child Node
     
-3. **Gain Ratio**: Gain ratio handles the issue of bias by normalizing the information gain using Split Info
+3. **Gain Ratio**: Gain ratio handles the issue of bias by normalizing the information gain using Split Info:
 $$\text{SplitInfo}_A(D) = -\sum_{j=1}^v \frac{|D_j|}{|D|} \log \left(\frac{|D_j|}{|D|}\right)$$
     
     💡 Where
@@ -50,17 +50,17 @@ $$\text{GainRatio}(A) = \frac{\text{Gain}(A)}{\text{SplitInfo}_A(D)}$$
     
     The Attribute with the highest gain ratio is chosen as the splitting attribute.
     
-5. **Gini Index**: Used to determine the correct variable for splitting nodes. 
+6. **Gini Index**: Used to determine the correct variable for splitting nodes. 
     1. It measures how often a randomly chosen variable would be incorrectly identified. 
 $$\text{Gini}(D) = 1 - \sum_{i=1}^m P_i^2$$
     
     💡 Where
     - $P_i$ is the probability that a tuple in $D$ belongs to class $C_i$
     
-6. **Root Node**: The top node of a decision tree. Represents the entire data sample.
-7. **Decision Node**: Subnodes that can be split into different Subnodes
+7. **Root Node**: The top node of a decision tree. Represents the entire data sample.
+8. **Decision Node**: Subnodes that can be split into different Subnodes
     1. They contain at least two branches.
-8. **Leaf Node**: Carries the final Results. Also known as terminal nodes. 
+9. **Leaf Node**: Carries the final Results. Also known as terminal nodes. 
     1. Cannot be split further.
 
 
