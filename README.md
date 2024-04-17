@@ -38,7 +38,6 @@ $$IG(D_p, f) = E(D_p) - \frac{N_{left}}{N} E(D_{left}) - \frac{N_{right}}{N} E(D
     - $N_{right}$ is the Total Number of Samples at Right Child Node
     
 3. **Gain Ratio**: Gain ratio handles the issue of bias by normalizing the information gain using Split Info
-    Split Info:
 $$\text{SplitInfo}_A(D) = -\sum_{j=1}^v \frac{|D_j|}{|D|} \log \left(\frac{|D_j|}{|D|}\right)$$
     
     💡 Where
