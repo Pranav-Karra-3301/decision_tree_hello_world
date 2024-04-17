@@ -17,64 +17,50 @@ A decision Tree is a supervised learning method used to predict the output of a 
     2. It is calculated using the following formula:
     
     $$
-    \sum_{i=1}^{k}P(\text{value}_i).\log_2(P\text({value}_i))
+    \sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))
     $$
     
 2. **Information Gain**: Measures the decrease in entropy after the data set is split. 
     1. It is calculated as follows:
     
     $$
-    {IG}(Y,X)=\text{Entropy}(Y)=\text{Entropy}(Y|X)
+    IG(Y,X) = \text{Entropy}(Y) - \text{Entropy}(Y|X)
     $$
     
     or in more detail its given as:
     
     $$
-    {IG}({D_p},f) = E({D_p})-\frac{N_{left}}{N}E({D_{left}})-\frac{N_{right}}{N}E({D_{right}})
+    IG(D_p, f) = E(D_p) - \frac{N_{left}}{N} E(D_{left}) - \frac{N_{right}}{N} E(D_{right})
     $$
     
     💡 where:
     
-    $f$         is Feature Split on
-    
-    ${D_p}$      is Dataset of Parent Node
-    
-    ${D_{left}}$  is Dataset of Left Child Node
-    
-    ${D_{right}}$ is Dataset of Right Child Node
-    
-    $E$         is Impurity Criterion (Entropy)
-    
-    $N$         is the Total Number of samples
-    
-    $N_{left}$    is the Total Number of Samples at Left Child Node
-    
-    $N_{right}$  is the Total Number of Samples at Right Child Node
-    
+    - $f$         is Feature Split on
+    - $D_p$       is Dataset of Parent Node
+    - $D_{left}$  is Dataset of Left Child Node
+    - $D_{right}$ is Dataset of Right Child Node
+    - $E$         is Impurity Criterion (Entropy)
+    - $N$         is the Total Number of samples
+    - $N_{left}$  is the Total Number of Samples at Left Child Node
+    - $N_{right}$ is the Total Number of Samples at Right Child Node
     
 3. **Gain Ratio**: Gain ratio handles the issue of bias by normalizing the information gain using Split Info
     
     Split Info:
     
     $$
-    {SplitInfo}_A(D) = -\sum_{j=1}^v \frac{|D_j|}{|D|} \times \log \left (\frac{|D_j|}{|D|}\right)
+    \text{SplitInfo}_A(D) = -\sum_{j=1}^v \frac{|D_j|}{|D|} \log \left(\frac{|D_j|}{|D|}\right)
     $$
     
-    <aside>
     💡 Where
     
-    $\frac{|D_j|}{|D|}$    acts as the weight of the jth partition
-    
-    $v$       is the number of discrete values in attribute A
-    
-    </aside>
+    - $\frac{|D_j|}{|D|}$    acts as the weight of the jth partition
+    - $v$       is the number of discrete values in attribute A
     
     Gain Ratio:
     
     $$
-    {GainRatio}(A)
-    =
-    \frac{{Gain}(A)}{{SplitInfo}_A(D)}
+    \text{GainRatio}(A) = \frac{\text{Gain}(A)}{\text{SplitInfo}_A(D)}
     $$
     
     The Attribute with the highest gain ratio is chosen as the splitting attribute.
@@ -83,19 +69,18 @@ A decision Tree is a supervised learning method used to predict the output of a 
     1. It measures how often a randomly chosen variable would be incorrectly identified. 
     
     $$
-    \text{Gini}(D) = 1 - \sum_{i=1}^m {Pi}^2
+    \text{Gini}(D) = 1 - \sum_{i=1}^m P_i^2
     $$
     
-
     💡 Where
-    ${Pi}$ is the probability that a tuple in $D$ belongs to class ${Ci}$
-
+    - $P_i$ is the probability that a tuple in $D$ belongs to class $C_i$
     
-5. **Root Node**: The top node of a decision tree. Represents the entire data sample
+5. **Root Node**: The top node of a decision tree. Represents the entire data sample.
 6. **Decision Node**: Subnodes that can be split into different Subnodes
-    1. They Contain at-least two branches
+    1. They contain at least two branches.
 7. **Leaf Node**: Carries the final Results. Also known as terminal nodes. 
-    1. Cannot be split further
+    1. Cannot be split further.
+
 
 ---
 
