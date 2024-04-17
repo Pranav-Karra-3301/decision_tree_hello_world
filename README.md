@@ -15,9 +15,10 @@ A decision Tree is a supervised learning method used to predict the output of a 
 1. **Entropy**: Measure of uncertainty or randomness in a dataset. 
     1. It handles how a decision tree splits the data. 
     2. It is calculated using the following formula:
+    $$ \sum $$
     
     $$
-    \mathcal{\sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))}
+    \sum_{i=1}^{k}P(\text{value}_i) \cdot \log_2(P(\text{value}_i))
     $$
     
 2. **Information Gain**: Measures the decrease in entropy after the data set is split. 
