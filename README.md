@@ -59,12 +59,7 @@ A decision Tree is a supervised learning method used to predict the output of a 
     Split Info:
     
     $$
-    {SplitInfo}_A(D)
-    =
-    -\sum_{j=1}^v 
-    \frac{|D_j|}{|D|}
-    \times
-    \log \left (\frac{|D_j|}{|D|}\right)
+    {SplitInfo}_A(D) = -\sum_{j=1}^v \frac{|D_j|}{|D|} \times \log \left (\frac{|D_j|}{|D|}\right)
     $$
     
     <aside>
@@ -90,10 +85,7 @@ A decision Tree is a supervised learning method used to predict the output of a 
     1. It measures how often a randomly chosen variable would be incorrectly identified. 
     
     $$
-    {Gini}(D)
-    = 1 -
-    \sum_{i=1}^m
-    {Pi}^2
+    {Gini}(D) = 1 - \sum_{i=1}^m {Pi}^2
     $$
     
     <aside>
