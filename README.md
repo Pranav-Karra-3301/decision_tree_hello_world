@@ -1,4 +1,8 @@
-# decision_tree_from_scratch
+# decision_tree_hello_world
+
+![Static Badge](https://img.shields.io/badge/-Jupyter_Notebook-orange?logo=jupyter&logoColor=white)
+![pandas](https://img.shields.io/badge/-pandas-navy?logo=pandas)
+![scikit](https://img.shields.io/badge/-scikit--learn-blue?logo=scikitlearn)
 
 ## A High Level Understanding
 
@@ -155,7 +159,7 @@ Image(graph.create_png())
 
 $output:$
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b2d0552a-437e-4bb3-8904-b3b588bb0ac2/d7967c7c-5e65-4128-8509-4de54b6b575d/Untitled.png)
+![Untitled](decistion_tree.png)
 
 ---
 
